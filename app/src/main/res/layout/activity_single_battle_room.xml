@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleBattleRoom">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ar15andsop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/Btitle"
+                android:background="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="觉醒副本-九层"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@android:color/white"/>
+            <Button
+                android:onClick="back"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/white"
+                android:text="返回"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:textSize="20dp"
+            android:text="         ，\n                 "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:text=""/>
+
+        <LinearLayout
+            android:id="@+id/Text_drawable"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+
+            <TextView
+                android:onClick="ShowMap1"
+                android:textColor="@android:color/white"
+                android:id="@+id/map_1title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="基本描述"
+                android:textSize="25dp"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+
+            <ImageView
+                android:id="@+id/Map1_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text="御魂掉落"
+                android:textSize="20dp"/>
+
+
+
+            <TextView
+                android:id="@+id/Map1_drop"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text="233"
+                android:textSize="20dp"/>
+
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text="推荐等级"
+                android:textSize="20dp"/>
+
+
+            <TextView
+                android:id="@+id/enemy1"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text="233"
+                android:textSize="20dp"/>
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:onClick="ShowMap2"
+                android:textColor="@android:color/white"
+                android:id="@+id/map_2title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="回合·一"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+
+            <ImageView
+                android:id="@+id/Map2_image"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text=" "
+                android:textSize="20dp"/>
+
+
+
+            <TextView
+                android:id="@+id/Map2_drop"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text=" "
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/enemy2"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="怪物阵容"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="椒图x1、莹草x1、鲤鱼精x1\n注意：\n莹草补血6300暴击9500+，先杀椒图，再打鲤鱼精，如果输出不够，打不死椒图，
+就会被无限奶、涓流、泡泡消耗。"
+                android:textSize="20dp"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+
+            <TextView
+                android:onClick="ShowMap3"
+
+                android:textColor="@android:color/white"
+                android:id="@+id/map_3title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="回合·二"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+
+            <ImageView
+                android:id="@+id/Map3_image"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text=" "
+                android:textSize="20dp"/>
+
+
+
+            <TextView
+                android:id="@+id/Map3_drop"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text=" "
+                android:textSize="20dp"/>
+
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text="怪物阵容"
+                android:textSize="20dp"/>
+
+
+            <TextView
+                android:id="@+id/enemy3"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text="狸猫x1、清姬x1、食梦貘x1\n注意：\n清姬AOE，攻击力极高，狸猫有单体嘲讽，食梦貘因为睡眠控制强优先集火或者控制，清姬AOE如果式神防御血量不高容易被秒，所以进入2回合注意血上限控制，因为清姬会叠状态，要不惠比寿二级旗子驱散，要不就速战速决。"
+                android:textSize="20dp"/>
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:onClick="ShowMap4"
+
+                android:textColor="@android:color/white"
+                android:id="@+id/map_4title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="回合·三"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+
+            <ImageView
+                android:id="@+id/Map4_image"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text=" "
+                android:textSize="20dp"/>
+
+
+
+            <TextView
+                android:id="@+id/Map4_drop"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text=" "
+                android:textSize="20dp"/>
+
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text="怪物阵容"
+                android:textSize="20dp"/>
+
+
+            <TextView
+                android:id="@+id/enemy4"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="八歧大蛇x1、两面佛x2\n注意：\n两面佛的AOE伤害很高，而且免疫控制，也就是说如果不秒掉就得吃2套。
+
+　　两套不死的参考要求：阴阳师技能减伤30%情况下，9000血450防御以上能不死，10000血500防御以上比较稳。
+
+　　另外两面佛AOE有冰冻效果，即使不死还是要拼脸。"
+                android:textSize="20dp"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
